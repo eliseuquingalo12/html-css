@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: black;
+        }
+
+        div{
+            color: white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            margin: auto;
+        }
+        fieldset{
+            border-top: 0px;
+            border-bottom: 0px;
+            border-radius: 15px;
+        }
+        legend{
+            text-align: center;
+        }
+
+        form{
+            padding: 20px;
+        }
+        input.estilo{
+            width: 280px;
+            height: 50px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: 1 solid black;
+            background-color: black;
+            color: white;
+        }
+        
+        fieldset:hover{ 
+        border-left: 2px solid rgb(0, 162, 255);
+        border-right: 2px solid rgb(0, 162, 255); 
+            transition-duration: .5s;
+        }
+        .logo img{
+            border-radius: 50%;
+            width: 40px;
+            margin-bottom: 15px;
+        }
+        .logo{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="logo">
+            <a href="">
+                <img src="imagens/logo-facebook.jpg" alt="facebook"><br>
+            </a>
+            <a href=""><img src="imagens/logo-twitter.jpg" alt="twiter" ></a><br>
+            <a href=""><img src="imagens/logo-youtube.jpg " alt="logo-youtube" ></a><br>
+                </section>
+            <div>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                     <form action="cadastro.php">
+                    <p>
+                        <label for="inome">Nome:</label></p>
+                        <input type="npme" name="" id="inome" class="estilo" placeholder="Digite o seu nome" required>
+                        <p>
+                        <label for="isenha">Senha:</label> </p>
+                        <input type="password" name="senha" id="isenha" class="estilo" min="8" max="15" required placeholder="Informe a senha">
+        
+                        <p>
+                            <label for="iemail">Email:</label> </p>
+                            <input type="email" name="email" id="iemail" class="estilo" placeholder="Ex: amarial@gmail.com">
+        
+                        <p>
+                            <label for="inumero">Telefone:</label> </p>
+                            <input type="text" name="numero" id="inumero" class="estilo" maxlength="15" placeholder="+244|944 246 495" >
+        
+                        <input type="submit" value="Cadastrar">
+                        <input type="reset" value="Limpar" class="umas">
+                </form>
+            </fieldset>
+        </div>
+    </main>
+</body>
+</html>

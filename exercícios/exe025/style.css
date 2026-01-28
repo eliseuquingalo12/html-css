@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+:root{
+    --font1: Verdana, Geneva, sans-serif;
+    --font2:Georgia, Times, 'Times New Roman', serif ;
+    --font3: cursive, Cochin, Georgia, Times, 'Times New Roman', seri;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: var(--font1);
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    font-family: var(--font2);
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+header p{
+    padding-bottom: 50px; 
+}
+A {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 1.5em;
+}
+section p{
+ padding-bottom: 2em ;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(56, 55, 55);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.541) ;
+    background-attachment: fixed;
+}
+
+section.imagem p {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-shadow: 4px 4px black;
+}
+
+   section#img01{
+    background-image: url('./imagens/background001.jpg');
+    background-position: right center ;
+   }
+   section#img02{
+     background-image: url('./imagens/background002.jpg');
+    background-position: right center ;
+   }
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

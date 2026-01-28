@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body{
+            margin: 150px;
+        }
+        label{
+            display: block;
+            margin: auto;
+        }
+        input{
+            padding: 5px;
+            border-radius: 5px 5px;
+        }
+        div{
+            padding-top: 100px;
+            background-color: black;
+            margin: auto;
+            width: 350px;
+            color: white;
+            border-radius: 10px 10px;
+        }
+         form{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="#">
+            <label         for="name_id">Nome:</label>
+            <input  id="nome_id" type="text" name="nome" placeholder="Digite o seu nome aqui">
+             <label for="morada_id">Morada:</label>
+            <input id="morada_id" type="text" name="morada" placeholder="Digite a sua morada aqui" required>
+            <label for="date">Data de Nascimento</label>
+            <input type="date" name="nascimento">
+            <label for="email">Email</label>
+            <input type="email" name="email"><br><br>
+            <label for="Senha">Senha:</label>
+            <input type="password" name="senha"><br><br>
+            <select name="curso" id="">
+                <option>Informática</option>
+                <option>Engenharia</option>
+                <option>Medicina</option>
+                <option>Enfermagem</option>
+            </select>
+            <input type="checkbox" name="hobby" value="futebol"> Futebol
+            <input type="checkbox" name="hobby" value="futebol"> Música
+            <input type="radio" name="hobby" value="musica">Musica
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+</body>
+</html>

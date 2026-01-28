@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <p>Nesta parte, criaremos alguns formulários usando:
+        <ul>
+            <li>Select</li>
+            <ul><li>Option</li></ul>
+            <li>Optgroup</li>
+            <li>Textarea</li>
+        </ul>
+    </p>
+    <form action="cadastro.php">
+        <label for="iprov">Província</label>
+        <select name="Provincia" id="iprov">
+            <optgroup label="Províncias do Norte">
+                <option value="LD">Luanda</option>
+                <option value="IB">Icolo e Bengo</option>
+                <option value="BI" selected>Bié</option>
+            </optgroup>
+            
+            <optgroup label="Províncias do Sul">
+                <option value="KW">Kwanza Norte</option>
+                <option value="BG">Benguela</option>
+                <option value="LB">Lubito</option>
+            </optgroup>
+             </select>
+             <p>
+
+            </p>
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="Prof" id="iprof" list="idprof">
+                <datalist id="idprof">
+                    <option >Desemvolvedor</option>
+                    <option >Professor</option>
+                    <option >Pedreiro</option>
+                    <option >Arquiteto</option>
+            </p>
+            </datalist>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea><br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    
+    </form>
+</body>
+</html>

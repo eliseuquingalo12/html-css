@@ -1,0 +1,35 @@
+*{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+header{
+    background-color: rgba(0, 110, 255, 0.61);
+    padding: 4px;
+    color: rgba(255, 255, 255, 0.945);
+}
+
+nav{
+    background-color: darkgrey;
+    text-align: center;
+    padding: 1px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 8px;   
+}
+nav a:hover{
+    color: white;
+    background-color: rgb(3, 3, 122);
+    border-radius: 2px;
+    padding: 2px;
+    transition-duration: 0.5s;
+}
+main{
+    text-align: center;
+}
+fieldset{
+    margin-top: 2px;
+}

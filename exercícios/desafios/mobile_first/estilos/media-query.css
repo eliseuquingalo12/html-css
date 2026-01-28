@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* todas a demais medias*/
+
+@media print{
+
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+ /*tablet*/   
+    body{background: black url('../imagens/fundo-tablet.jpeg') no-repeat;
+    }
+
+    main{
+
+
+#celular{display: none;}
+#tablet{display: block;}
+#impressora{display: none;}
+#pc{display: none;}
+#tv{display: none;}
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+ /*desktop*/  
+    body{background: black url('../imagens/fundo-pc.jpeg') no-repeat;
+    }
+
+    main{
+
+
+#celular{display: none;}
+#tablet{display: none;}
+#impressora{display: none;}
+#pc{display: block;}
+#tv{display: none;}
+    }
+}
+
+@media screen and (min-width: 1201px) {
+ /*telas grandes*/   
+ body{background: black url('../imagens/fundo-tv.jpeg') no-repeat;
+    }
+
+    main{
+
+
+#celular{display: none;}
+#tablet{display: none;}
+#impressora{display: none;}
+#pc{display: none;}
+#tv{display: block;}
+    }
+}

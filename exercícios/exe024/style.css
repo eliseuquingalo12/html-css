@@ -1,0 +1,100 @@
+body{
+    background-color: white;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 97vh;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center top;
+
+}
+header{
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgb(9, 9, 134);
+    padding: 5px;
+    box-shadow: 1px 1px 1px black;
+}
+main{
+    margin: 0px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: justify;
+    background-color: rgb(145, 225, 228);
+    padding: 5px;
+    box-shadow: 2px 2px 2px black;
+    
+}
+main p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+nav {
+    background-color: rgb(9, 9, 134);
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+nav a:hover{
+    border-radius: 16px;
+    color: darkgray;
+    background-color: rgb(79, 79, 209);
+    transition-duration: .5s;
+}
+footer p{
+    margin: auto;
+}
+img{
+    width: 50%;
+    height: 50vh;
+    display: block;
+    margin: 0px auto;
+}
+section{
+    padding-left: 50px;
+    padding-bottom: 50px;
+      line-height: 2em ;
+}
+section.todos{
+    background-color: black;
+    max-height: 50vh;
+}
+section.imgdri p{ 
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    padding-top: 50px;
+}
+
+section.imgdri{
+    background-image: url('imagens/dri.jpg');
+    background-position: center top;
+    height: 50vh;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imgmar p{ 
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    padding-top: 50px;
+}
+section.imgmar{
+    background-image: url('imagens/mar.jpg');
+    background-position: right center;
+    height: 50vh;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
